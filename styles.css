@@ -1,0 +1,170 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1a1a1a;
+  color: white;
+  overflow: hidden;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.shape {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: float 6s infinite ease-in-out;
+}
+
+/* Header styles */
+.profile {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+/* Button styles */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #552;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: transform 0.3s, background 0.3s;
+  width: 220px;
+  margin: 10px 0;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: #333;
+}
+
+/* Footer styles */
+.quote {
+  text-align: center;
+  margin: 50px 0;
+  font-style: italic;
+}
+
+/* Partners section */
+.partners-section {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.partners-section h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.partners img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 8px;
+   margin-top: -15px;
+}
+
+.partners img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Background animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Shape animations */
+.shape:nth-child(1) {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.shape:nth-child(2) {
+  top: 40%;
+  left: 60%;
+  animation-delay: 1s;
+}
+
+.shape:nth-child(3) {
+  top: 70%;
+  left: 30%;
+  animation-delay: 2s;
+}
+
+.shape:nth-child(4) {
+  top: 15%;
+  left: 80%;
+  animation-delay: 3s;
+}
+
+.shape:nth-child(5) {
+  top: 50%;
+  left: 10%;
+  animation-delay: 4s;
+}
+
+.shape:nth-child(6) {
+  top: 85%;
+  left: 50%;
+  animation-delay: 5s;
+}
+
+.shape:nth-child(7) {
+  top: 30%;
+  left: 40%;
+  animation-delay: 2.5s;
+}
+
+.shape:nth-child(8) {
+  top: 65%;
+  left: 70%;
+  animation-delay: 4.5s;
+}
